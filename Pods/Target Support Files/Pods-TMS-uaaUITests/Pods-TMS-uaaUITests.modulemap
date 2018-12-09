@@ -1,0 +1,6 @@
+framework module Pods_TMS_uaaUITests {
+  umbrella header "Pods-TMS-uaaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
