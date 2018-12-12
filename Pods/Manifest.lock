@@ -1,20 +1,28 @@
 PODS:
   - Alamofire (5.0.0.beta.1)
+  - expanding-collection (3.0.0)
+  - SwiftyJSON (4.2.0)
   - ViewAnimator (2.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0.beta.1)
+  - expanding-collection (~> 3.0.0)
+  - SwiftyJSON (~> 4.0)
   - ViewAnimator (~> 2.2.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - expanding-collection
+    - SwiftyJSON
     - ViewAnimator
 
 SPEC CHECKSUMS:
   Alamofire: 2ef6d6c984c5d21c366e9b41a9ae7dfee2b67a44
+  expanding-collection: 008241debdc263d25e230d6a0824a558a8f2755c
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   ViewAnimator: a849844cc3698620e1a562b510ed0c28aeafcdc5
 
-PODFILE CHECKSUM: 1720b46ee4fc933902ca570d02d6471cb3f73453
+PODFILE CHECKSUM: e80fb81f6962231656de1b2954f2291bad8eb566
 
 COCOAPODS: 1.5.2

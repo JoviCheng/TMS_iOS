@@ -8,6 +8,8 @@ target 'TMS-uaa' do
   use_frameworks!
   pod 'ViewAnimator', '~> 2.2.0'
   pod 'Alamofire', '~> 5.0.0.beta.1'
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'expanding-collection', '~> 3.0.0'
   # Pods for TMS-uaa
 
   target 'TMS-uaaTests' do

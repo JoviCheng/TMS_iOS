@@ -10,9 +10,17 @@
 		02DFEC91FFCE24BFE2E45841 /* Pods_TMS_uaa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923DECAB3D4F9E3475EFDD62 /* Pods_TMS_uaa.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		0BB914994EC9BD03DB3B2BFA /* Pods_TMS_uaaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BFDD70E7B5C8AB17319C9C /* Pods_TMS_uaaUITests.framework */; };
 		8F77F5704228292F7632EB63 /* Pods_TMS_uaaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE18FE02F96F13EAEFD0F8B1 /* Pods_TMS_uaaTests.framework */; };
+		D91A4D7A21BFFB3C0086194C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4D7921BFFB3C0086194C /* MainViewController.swift */; };
+		D91A4D7E21BFFC7D0086194C /* CourseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91A4D7D21BFFC7D0086194C /* CourseCollectionViewCell.xib */; };
+		D93FB0EF21C0BA430023782C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93FB0EE21C0BA430023782C /* Main.storyboard */; };
+		D93FB0F221C0BAA90023782C /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB0F121C0BAA90023782C /* CourseDetailViewController.swift */; };
+		D93FB0FB21C0C0480023782C /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB0F921C0C0470023782C /* Images.swift */; };
+		D93FB0FC21C0C0480023782C /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB0FA21C0C0470023782C /* StoryboardHelper.swift */; };
+		D93FB0FE21C0C1090023782C /* ConfigurationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB0FD21C0C1090023782C /* ConfigurationHelper.swift */; };
+		D93FB10621C0C24E0023782C /* AnimationBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB10521C0C24E0023782C /* AnimationBarButton.swift */; };
+		D93FB10821C0C25F0023782C /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB10721C0C25F0023782C /* Rotatable.swift */; };
+		D94F18E921C006AD00E355F3 /* CourseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F18E721C0063D00E355F3 /* CourseCollectionViewCell.swift */; };
 		D9EA6AEB21BA5FBD00C4878E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA6AEA21BA5FBD00C4878E /* AppDelegate.swift */; };
-		D9EA6AED21BA5FBD00C4878E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA6AEC21BA5FBD00C4878E /* ViewController.swift */; };
-		D9EA6AF021BA5FBD00C4878E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9EA6AEE21BA5FBD00C4878E /* Main.storyboard */; };
 		D9EA6AF221BA5FC000C4878E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9EA6AF121BA5FC000C4878E /* Assets.xcassets */; };
 		D9EA6AF521BA5FC000C4878E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9EA6AF321BA5FC000C4878E /* LaunchScreen.storyboard */; };
 		D9EA6B0021BA5FC000C4878E /* TMS_uaaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA6AFF21BA5FC000C4878E /* TMS_uaaTests.swift */; };
@@ -45,10 +53,18 @@
 		923DECAB3D4F9E3475EFDD62 /* Pods_TMS_uaa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMS_uaa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D312F4F5ADC199773B84D0 /* Pods-TMS-uaa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMS-uaa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMS-uaa/Pods-TMS-uaa.debug.xcconfig"; sourceTree = "<group>"; };
 		C3840FE916D21D043ADA0EB8 /* Pods-TMS-uaa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMS-uaa.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMS-uaa/Pods-TMS-uaa.release.xcconfig"; sourceTree = "<group>"; };
+		D91A4D7921BFFB3C0086194C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D91A4D7D21BFFC7D0086194C /* CourseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseCollectionViewCell.xib; sourceTree = "<group>"; };
+		D93FB0EE21C0BA430023782C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
+		D93FB0F121C0BAA90023782C /* CourseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
+		D93FB0F921C0C0470023782C /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		D93FB0FA21C0C0470023782C /* StoryboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
+		D93FB0FD21C0C1090023782C /* ConfigurationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationHelper.swift; sourceTree = "<group>"; };
+		D93FB10521C0C24E0023782C /* AnimationBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationBarButton.swift; path = "../../../../../../Downloads/expanding-collection-master 2/DemoExpandingCollection/DemoExpandingCollection/Views/AnimatingBarButton/AnimationBarButton.swift"; sourceTree = "<group>"; };
+		D93FB10721C0C25F0023782C /* Rotatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rotatable.swift; path = "../../../../../../../Downloads/expanding-collection-master 2/DemoExpandingCollection/DemoExpandingCollection/Views/AnimatingBarButton/Animations/Rotatable.swift"; sourceTree = "<group>"; };
+		D94F18E721C0063D00E355F3 /* CourseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCollectionViewCell.swift; sourceTree = "<group>"; };
 		D9EA6AE721BA5FBD00C4878E /* TMS-uaa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMS-uaa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9EA6AEA21BA5FBD00C4878E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D9EA6AEC21BA5FBD00C4878E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D9EA6AEF21BA5FBD00C4878E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9EA6AF121BA5FC000C4878E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9EA6AF421BA5FC000C4878E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9EA6AF621BA5FC000C4878E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,6 +117,77 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D91A4D7621BFFACD0086194C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D93FB0F021C0BA8D0023782C /* CourseDetailViewController */,
+				D91A4D7721BFFAF50086194C /* MainViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D91A4D7721BFFAF50086194C /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D91A4D7821BFFB200086194C /* Cell */,
+				D91A4D7921BFFB3C0086194C /* MainViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		D91A4D7821BFFB200086194C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D94F18E721C0063D00E355F3 /* CourseCollectionViewCell.swift */,
+				D91A4D7D21BFFC7D0086194C /* CourseCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D93FB0F021C0BA8D0023782C /* CourseDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D93FB0F121C0BAA90023782C /* CourseDetailViewController.swift */,
+			);
+			path = CourseDetailViewController;
+			sourceTree = "<group>";
+		};
+		D93FB0F621C0BBFE0023782C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D93FB10221C0C1DC0023782C /* View */,
+				D93FB0FD21C0C1090023782C /* ConfigurationHelper.swift */,
+				D93FB0F921C0C0470023782C /* Images.swift */,
+				D93FB0FA21C0C0470023782C /* StoryboardHelper.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D93FB10221C0C1DC0023782C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D93FB10321C0C2310023782C /* AnimatingBarButton */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D93FB10321C0C2310023782C /* AnimatingBarButton */ = {
+			isa = PBXGroup;
+			children = (
+				D93FB10521C0C24E0023782C /* AnimationBarButton.swift */,
+				D93FB10421C0C23A0023782C /* Animations */,
+			);
+			path = AnimatingBarButton;
+			sourceTree = "<group>";
+		};
+		D93FB10421C0C23A0023782C /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				D93FB10721C0C25F0023782C /* Rotatable.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		D9EA6ADE21BA5FBD00C4878E = {
 			isa = PBXGroup;
 			children = (
@@ -126,9 +213,10 @@
 		D9EA6AE921BA5FBD00C4878E /* TMS-uaa */ = {
 			isa = PBXGroup;
 			children = (
+				D93FB0F621C0BBFE0023782C /* Source */,
+				D91A4D7621BFFACD0086194C /* ViewControllers */,
 				D9EA6AEA21BA5FBD00C4878E /* AppDelegate.swift */,
-				D9EA6AEC21BA5FBD00C4878E /* ViewController.swift */,
-				D9EA6AEE21BA5FBD00C4878E /* Main.storyboard */,
+				D93FB0EE21C0BA430023782C /* Main.storyboard */,
 				D9EA6AF121BA5FC000C4878E /* Assets.xcassets */,
 				D9EA6AF321BA5FC000C4878E /* LaunchScreen.storyboard */,
 				D9EA6AF621BA5FC000C4878E /* Info.plist */,
@@ -276,8 +364,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9EA6AF521BA5FC000C4878E /* LaunchScreen.storyboard in Resources */,
+				D91A4D7E21BFFC7D0086194C /* CourseCollectionViewCell.xib in Resources */,
 				D9EA6AF221BA5FC000C4878E /* Assets.xcassets in Resources */,
-				D9EA6AF021BA5FBD00C4878E /* Main.storyboard in Resources */,
+				D93FB0EF21C0BA430023782C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,12 +395,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TMS-uaa/Pods-TMS-uaa-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/expanding_collection.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -379,7 +472,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9EA6AED21BA5FBD00C4878E /* ViewController.swift in Sources */,
+				D93FB0FB21C0C0480023782C /* Images.swift in Sources */,
+				D93FB0F221C0BAA90023782C /* CourseDetailViewController.swift in Sources */,
+				D93FB0FC21C0C0480023782C /* StoryboardHelper.swift in Sources */,
+				D93FB0FE21C0C1090023782C /* ConfigurationHelper.swift in Sources */,
+				D93FB10821C0C25F0023782C /* Rotatable.swift in Sources */,
+				D93FB10621C0C24E0023782C /* AnimationBarButton.swift in Sources */,
+				D91A4D7A21BFFB3C0086194C /* MainViewController.swift in Sources */,
+				D94F18E921C006AD00E355F3 /* CourseCollectionViewCell.swift in Sources */,
 				D9EA6AEB21BA5FBD00C4878E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,14 +516,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D9EA6AEE21BA5FBD00C4878E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D9EA6AEF21BA5FBD00C4878E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D9EA6AF321BA5FC000C4878E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -558,7 +650,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7E5289C7Y;
 				INFOPLIST_FILE = "TMS-uaa/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -567,7 +661,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "JoviCheng.TMS-uaa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -577,7 +671,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7E5289C7Y;
 				INFOPLIST_FILE = "TMS-uaa/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -586,7 +682,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "JoviCheng.TMS-uaa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
