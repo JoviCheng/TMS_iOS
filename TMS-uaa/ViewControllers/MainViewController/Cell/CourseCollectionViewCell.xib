@@ -37,14 +37,15 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m8g-M5-bVK" userLabel="Front Container View">
                         <rect key="frame" x="0.0" y="0.0" width="256" height="335"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color0" translatesAutoresizingMaskIntoConstraints="NO" id="HgB-AO-8Kv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color0" translatesAutoresizingMaskIntoConstraints="NO" id="HgB-AO-8Kv">
                                 <rect key="frame" x="0.0" y="0.0" width="256" height="335"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19h-8F-iSh">
-                                <rect key="frame" x="58" y="27" width="141" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19h-8F-iSh">
+                                <rect key="frame" x="99.5" y="40" width="57" height="29"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -52,6 +53,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="256" id="7ow-jd-4gm"/>
+                            <constraint firstItem="HgB-AO-8Kv" firstAttribute="leading" secondItem="m8g-M5-bVK" secondAttribute="leading" id="Ece-ci-qr8"/>
+                            <constraint firstItem="HgB-AO-8Kv" firstAttribute="top" secondItem="m8g-M5-bVK" secondAttribute="top" id="O4o-7Z-EUU"/>
+                            <constraint firstItem="19h-8F-iSh" firstAttribute="centerX" secondItem="m8g-M5-bVK" secondAttribute="centerX" id="gHg-IB-b61"/>
+                            <constraint firstItem="19h-8F-iSh" firstAttribute="top" secondItem="m8g-M5-bVK" secondAttribute="top" constant="40" id="jRM-iq-wM6"/>
+                            <constraint firstAttribute="trailing" secondItem="HgB-AO-8Kv" secondAttribute="trailing" id="kQw-WM-KIx"/>
+                            <constraint firstAttribute="bottom" secondItem="HgB-AO-8Kv" secondAttribute="bottom" id="stE-en-Ybi"/>
                             <constraint firstAttribute="height" constant="335" id="wPQ-Op-Q03"/>
                         </constraints>
                     </view>
