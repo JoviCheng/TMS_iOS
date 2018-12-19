@@ -15,7 +15,7 @@ class CourseDetailViewController: ExpandingTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureNavBar()
-        let image1 = Asset.backgroundImage.image
+        let image1 = Asset.white.image
         print(image1)
         tableView.backgroundView = UIImageView(image: image1)
         if #available(iOS 11.0, *) {

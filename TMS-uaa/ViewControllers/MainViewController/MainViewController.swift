@@ -45,13 +45,13 @@ extension MainViewController {
     fileprivate func fillCellIsOpenArray() {
         //注册Cell 的打开状态，初始化全为 False
         cellsIsOpen = Array(repeating: false, count: items.count)
-        print(cellsIsOpen)
+//        print(cellsIsOpen)
     }
     
     fileprivate func closeOthersCell(activeIndex: Int) {
         //注册Cell 的打开状态，初始化全为 False
         cellsIsOpen[activeIndex] = false
-        print(cellsIsOpen)
+//        print(cellsIsOpen)
     }
     
     fileprivate func getViewController() -> ExpandingTableViewController {
@@ -118,11 +118,21 @@ extension MainViewController {
         //        print(index)
         //        print(currentIndex)
         let info = items[index]
-        print(info)
+//        print(info)
         cell.backgroundImageView?.image = UIImage(named: info.imageName)
         cell.courseTitle.text = info.title
         cell.cellIsOpen(cellsIsOpen[index], animated: false)
-        print(cellsIsOpen)
+//        print(cellsIsOpen)
+    }
+    
+    //Ending Displaying
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+//        super.collectionView(collectionView, didEndDisplaying: cell, forItemAt: indexPath)
+        guard let cell = cell as? CourseCollectionViewCell else { return }
+//        print(cell)
+        cell.cellIsOpen(false, animated: false)
+        print(cell.isOpened)
+//        print("disapper")
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

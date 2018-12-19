@@ -12,6 +12,27 @@
 		8F77F5704228292F7632EB63 /* Pods_TMS_uaaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE18FE02F96F13EAEFD0F8B1 /* Pods_TMS_uaaTests.framework */; };
 		D91A4D7A21BFFB3C0086194C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A4D7921BFFB3C0086194C /* MainViewController.swift */; };
 		D91A4D7E21BFFC7D0086194C /* CourseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91A4D7D21BFFC7D0086194C /* CourseCollectionViewCell.xib */; };
+		D93EAFAF21C79E8A00DE2DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93EAFAE21C79E8A00DE2DD0 /* Assets.xcassets */; };
+		D93EAFB521C89DC700DE2DD0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFB421C89DC700DE2DD0 /* LoginViewController.swift */; };
+		D93EAFB921C89DD200DE2DD0 /* CritterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFB621C89DD200DE2DD0 /* CritterView.swift */; };
+		D93EAFBA21C89DD200DE2DD0 /* CritterAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFB721C89DD200DE2DD0 /* CritterAnimatable.swift */; };
+		D93EAFBB21C89DD200DE2DD0 /* CritterAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFB821C89DD200DE2DD0 /* CritterAssets.swift */; };
+		D93EAFCA21C89DE700DE2DD0 /* LeftEarMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFBD21C89DE600DE2DD0 /* LeftEarMask.swift */; };
+		D93EAFCB21C89DE700DE2DD0 /* Muzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFBE21C89DE600DE2DD0 /* Muzzle.swift */; };
+		D93EAFCC21C89DE700DE2DD0 /* LeftArm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFBF21C89DE600DE2DD0 /* LeftArm.swift */; };
+		D93EAFCD21C89DE700DE2DD0 /* Nose.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFC021C89DE600DE2DD0 /* Nose.swift */; };
+		D93EAFCE21C89DE700DE2DD0 /* RightEarMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFC121C89DE700DE2DD0 /* RightEarMask.swift */; };
+		D93EAFCF21C89DE700DE2DD0 /* Head.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFC221C89DE700DE2DD0 /* Head.swift */; };
+		D93EAFD021C89DE700DE2DD0 /* RightArm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFC321C89DE700DE2DD0 /* RightArm.swift */; };
+		D93EAFD121C89DE700DE2DD0 /* Mouth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFC421C89DE700DE2DD0 /* Mouth.swift */; };
+		D93EAFD221C89DE700DE2DD0 /* RightEar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFC521C89DE700DE2DD0 /* RightEar.swift */; };
+		D93EAFD321C89DE700DE2DD0 /* LeftEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFC621C89DE700DE2DD0 /* LeftEye.swift */; };
+		D93EAFD421C89DE700DE2DD0 /* RightEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFC721C89DE700DE2DD0 /* RightEye.swift */; };
+		D93EAFD521C89DE700DE2DD0 /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFC821C89DE700DE2DD0 /* Body.swift */; };
+		D93EAFD621C89DE700DE2DD0 /* LeftEar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFC921C89DE700DE2DD0 /* LeftEar.swift */; };
+		D93EAFDA21C89E6C00DE2DD0 /* Degree.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFD721C89E6B00DE2DD0 /* Degree.swift */; };
+		D93EAFDB21C89E6C00DE2DD0 /* UIColors+ColorPallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFD821C89E6B00DE2DD0 /* UIColors+ColorPallete.swift */; };
+		D93EAFDC21C89E6C00DE2DD0 /* CATransform3D+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFD921C89E6C00DE2DD0 /* CATransform3D+Helper.swift */; };
 		D93FB0EF21C0BA430023782C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93FB0EE21C0BA430023782C /* Main.storyboard */; };
 		D93FB0F221C0BAA90023782C /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB0F121C0BAA90023782C /* CourseDetailViewController.swift */; };
 		D93FB0FB21C0C0480023782C /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB0F921C0C0470023782C /* Images.swift */; };
@@ -21,7 +42,6 @@
 		D93FB10821C0C25F0023782C /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB10721C0C25F0023782C /* Rotatable.swift */; };
 		D94F18E921C006AD00E355F3 /* CourseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F18E721C0063D00E355F3 /* CourseCollectionViewCell.swift */; };
 		D9EA6AEB21BA5FBD00C4878E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA6AEA21BA5FBD00C4878E /* AppDelegate.swift */; };
-		D9EA6AF221BA5FC000C4878E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9EA6AF121BA5FC000C4878E /* Assets.xcassets */; };
 		D9EA6AF521BA5FC000C4878E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9EA6AF321BA5FC000C4878E /* LaunchScreen.storyboard */; };
 		D9EA6B0021BA5FC000C4878E /* TMS_uaaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA6AFF21BA5FC000C4878E /* TMS_uaaTests.swift */; };
 		D9EA6B0B21BA5FC100C4878E /* TMS_uaaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA6B0A21BA5FC100C4878E /* TMS_uaaUITests.swift */; };
@@ -55,6 +75,27 @@
 		C3840FE916D21D043ADA0EB8 /* Pods-TMS-uaa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMS-uaa.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMS-uaa/Pods-TMS-uaa.release.xcconfig"; sourceTree = "<group>"; };
 		D91A4D7921BFFB3C0086194C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D91A4D7D21BFFC7D0086194C /* CourseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseCollectionViewCell.xib; sourceTree = "<group>"; };
+		D93EAFAE21C79E8A00DE2DD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "TMS-uaa/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		D93EAFB421C89DC700DE2DD0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D93EAFB621C89DD200DE2DD0 /* CritterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CritterView.swift; path = "TMS-uaa/ViewControllers/LoginViewController/Critter1/CritterView.swift"; sourceTree = SOURCE_ROOT; };
+		D93EAFB721C89DD200DE2DD0 /* CritterAnimatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CritterAnimatable.swift; path = "TMS-uaa/ViewControllers/LoginViewController/Critter1/CritterAnimatable.swift"; sourceTree = SOURCE_ROOT; };
+		D93EAFB821C89DD200DE2DD0 /* CritterAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CritterAssets.swift; path = "TMS-uaa/ViewControllers/LoginViewController/Critter1/CritterAssets.swift"; sourceTree = SOURCE_ROOT; };
+		D93EAFBD21C89DE600DE2DD0 /* LeftEarMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftEarMask.swift; path = "TMS-uaa/ViewControllers/LoginViewController/Critter1/Parts/LeftEarMask.swift"; sourceTree = SOURCE_ROOT; };
+		D93EAFBE21C89DE600DE2DD0 /* Muzzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Muzzle.swift; path = "TMS-uaa/ViewControllers/LoginViewController/Critter1/Parts/Muzzle.swift"; sourceTree = SOURCE_ROOT; };
+		D93EAFBF21C89DE600DE2DD0 /* LeftArm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftArm.swift; path = "TMS-uaa/ViewControllers/LoginViewController/Critter1/Parts/LeftArm.swift"; sourceTree = SOURCE_ROOT; };
+		D93EAFC021C89DE600DE2DD0 /* Nose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Nose.swift; path = "TMS-uaa/ViewControllers/LoginViewController/Critter1/Parts/Nose.swift"; sourceTree = SOURCE_ROOT; };
+		D93EAFC121C89DE700DE2DD0 /* RightEarMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RightEarMask.swift; path = "TMS-uaa/ViewControllers/LoginViewController/Critter1/Parts/RightEarMask.swift"; sourceTree = SOURCE_ROOT; };
+		D93EAFC221C89DE700DE2DD0 /* Head.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Head.swift; path = "TMS-uaa/ViewControllers/LoginViewController/Critter1/Parts/Head.swift"; sourceTree = SOURCE_ROOT; };
+		D93EAFC321C89DE700DE2DD0 /* RightArm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RightArm.swift; path = "TMS-uaa/ViewControllers/LoginViewController/Critter1/Parts/RightArm.swift"; sourceTree = SOURCE_ROOT; };
+		D93EAFC421C89DE700DE2DD0 /* Mouth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mouth.swift; path = "TMS-uaa/ViewControllers/LoginViewController/Critter1/Parts/Mouth.swift"; sourceTree = SOURCE_ROOT; };
+		D93EAFC521C89DE700DE2DD0 /* RightEar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RightEar.swift; path = "TMS-uaa/ViewControllers/LoginViewController/Critter1/Parts/RightEar.swift"; sourceTree = SOURCE_ROOT; };
+		D93EAFC621C89DE700DE2DD0 /* LeftEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftEye.swift; path = "TMS-uaa/ViewControllers/LoginViewController/Critter1/Parts/LeftEye.swift"; sourceTree = SOURCE_ROOT; };
+		D93EAFC721C89DE700DE2DD0 /* RightEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RightEye.swift; path = "TMS-uaa/ViewControllers/LoginViewController/Critter1/Parts/RightEye.swift"; sourceTree = SOURCE_ROOT; };
+		D93EAFC821C89DE700DE2DD0 /* Body.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Body.swift; path = "TMS-uaa/ViewControllers/LoginViewController/Critter1/Parts/Body.swift"; sourceTree = SOURCE_ROOT; };
+		D93EAFC921C89DE700DE2DD0 /* LeftEar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftEar.swift; path = "TMS-uaa/ViewControllers/LoginViewController/Critter1/Parts/LeftEar.swift"; sourceTree = SOURCE_ROOT; };
+		D93EAFD721C89E6B00DE2DD0 /* Degree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Degree.swift; sourceTree = "<group>"; };
+		D93EAFD821C89E6B00DE2DD0 /* UIColors+ColorPallete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColors+ColorPallete.swift"; sourceTree = "<group>"; };
+		D93EAFD921C89E6C00DE2DD0 /* CATransform3D+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CATransform3D+Helper.swift"; sourceTree = "<group>"; };
 		D93FB0EE21C0BA430023782C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		D93FB0F121C0BAA90023782C /* CourseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
 		D93FB0F921C0C0470023782C /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -65,7 +106,6 @@
 		D94F18E721C0063D00E355F3 /* CourseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCollectionViewCell.swift; sourceTree = "<group>"; };
 		D9EA6AE721BA5FBD00C4878E /* TMS-uaa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMS-uaa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9EA6AEA21BA5FBD00C4878E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D9EA6AF121BA5FC000C4878E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9EA6AF421BA5FC000C4878E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9EA6AF621BA5FC000C4878E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9EA6AFB21BA5FC000C4878E /* TMS-uaaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TMS-uaaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +160,7 @@
 		D91A4D7621BFFACD0086194C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D93EAFB021C89D5700DE2DD0 /* LoginViewController */,
 				D93FB0F021C0BA8D0023782C /* CourseDetailViewController */,
 				D91A4D7721BFFAF50086194C /* MainViewController */,
 			);
@@ -144,6 +185,47 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		D93EAFB021C89D5700DE2DD0 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D93EAFB321C89DB100DE2DD0 /* Critter */,
+				D93EAFB421C89DC700DE2DD0 /* LoginViewController.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		D93EAFB321C89DB100DE2DD0 /* Critter */ = {
+			isa = PBXGroup;
+			children = (
+				D93EAFBC21C89DD700DE2DD0 /* Parts */,
+				D93EAFB721C89DD200DE2DD0 /* CritterAnimatable.swift */,
+				D93EAFB821C89DD200DE2DD0 /* CritterAssets.swift */,
+				D93EAFB621C89DD200DE2DD0 /* CritterView.swift */,
+			);
+			name = Critter;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		D93EAFBC21C89DD700DE2DD0 /* Parts */ = {
+			isa = PBXGroup;
+			children = (
+				D93EAFC821C89DE700DE2DD0 /* Body.swift */,
+				D93EAFC221C89DE700DE2DD0 /* Head.swift */,
+				D93EAFBF21C89DE600DE2DD0 /* LeftArm.swift */,
+				D93EAFC921C89DE700DE2DD0 /* LeftEar.swift */,
+				D93EAFBD21C89DE600DE2DD0 /* LeftEarMask.swift */,
+				D93EAFC621C89DE700DE2DD0 /* LeftEye.swift */,
+				D93EAFC421C89DE700DE2DD0 /* Mouth.swift */,
+				D93EAFBE21C89DE600DE2DD0 /* Muzzle.swift */,
+				D93EAFC021C89DE600DE2DD0 /* Nose.swift */,
+				D93EAFC321C89DE700DE2DD0 /* RightArm.swift */,
+				D93EAFC521C89DE700DE2DD0 /* RightEar.swift */,
+				D93EAFC121C89DE700DE2DD0 /* RightEarMask.swift */,
+				D93EAFC721C89DE700DE2DD0 /* RightEye.swift */,
+			);
+			path = Parts;
+			sourceTree = "<group>";
+		};
 		D93FB0F021C0BA8D0023782C /* CourseDetailViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +248,9 @@
 		D93FB10221C0C1DC0023782C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D93EAFD921C89E6C00DE2DD0 /* CATransform3D+Helper.swift */,
+				D93EAFD721C89E6B00DE2DD0 /* Degree.swift */,
+				D93EAFD821C89E6B00DE2DD0 /* UIColors+ColorPallete.swift */,
 				D93FB10321C0C2310023782C /* AnimatingBarButton */,
 			);
 			path = View;
@@ -217,7 +302,7 @@
 				D91A4D7621BFFACD0086194C /* ViewControllers */,
 				D9EA6AEA21BA5FBD00C4878E /* AppDelegate.swift */,
 				D93FB0EE21C0BA430023782C /* Main.storyboard */,
-				D9EA6AF121BA5FC000C4878E /* Assets.xcassets */,
+				D93EAFAE21C79E8A00DE2DD0 /* Assets.xcassets */,
 				D9EA6AF321BA5FC000C4878E /* LaunchScreen.storyboard */,
 				D9EA6AF621BA5FC000C4878E /* Info.plist */,
 			);
@@ -365,7 +450,7 @@
 			files = (
 				D9EA6AF521BA5FC000C4878E /* LaunchScreen.storyboard in Resources */,
 				D91A4D7E21BFFC7D0086194C /* CourseCollectionViewCell.xib in Resources */,
-				D9EA6AF221BA5FC000C4878E /* Assets.xcassets in Resources */,
+				D93EAFAF21C79E8A00DE2DD0 /* Assets.xcassets in Resources */,
 				D93FB0EF21C0BA430023782C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,14 +558,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				D93FB0FB21C0C0480023782C /* Images.swift in Sources */,
+				D93EAFBA21C89DD200DE2DD0 /* CritterAnimatable.swift in Sources */,
 				D93FB0F221C0BAA90023782C /* CourseDetailViewController.swift in Sources */,
+				D93EAFCC21C89DE700DE2DD0 /* LeftArm.swift in Sources */,
+				D93EAFCF21C89DE700DE2DD0 /* Head.swift in Sources */,
 				D93FB0FC21C0C0480023782C /* StoryboardHelper.swift in Sources */,
+				D93EAFCB21C89DE700DE2DD0 /* Muzzle.swift in Sources */,
+				D93EAFD221C89DE700DE2DD0 /* RightEar.swift in Sources */,
+				D93EAFD021C89DE700DE2DD0 /* RightArm.swift in Sources */,
+				D93EAFDC21C89E6C00DE2DD0 /* CATransform3D+Helper.swift in Sources */,
+				D93EAFD521C89DE700DE2DD0 /* Body.swift in Sources */,
+				D93EAFBB21C89DD200DE2DD0 /* CritterAssets.swift in Sources */,
+				D93EAFDB21C89E6C00DE2DD0 /* UIColors+ColorPallete.swift in Sources */,
+				D93EAFD321C89DE700DE2DD0 /* LeftEye.swift in Sources */,
 				D93FB0FE21C0C1090023782C /* ConfigurationHelper.swift in Sources */,
 				D93FB10821C0C25F0023782C /* Rotatable.swift in Sources */,
+				D93EAFCA21C89DE700DE2DD0 /* LeftEarMask.swift in Sources */,
 				D93FB10621C0C24E0023782C /* AnimationBarButton.swift in Sources */,
+				D93EAFD121C89DE700DE2DD0 /* Mouth.swift in Sources */,
+				D93EAFD621C89DE700DE2DD0 /* LeftEar.swift in Sources */,
 				D91A4D7A21BFFB3C0086194C /* MainViewController.swift in Sources */,
 				D94F18E921C006AD00E355F3 /* CourseCollectionViewCell.swift in Sources */,
+				D93EAFD421C89DE700DE2DD0 /* RightEye.swift in Sources */,
+				D93EAFB921C89DD200DE2DD0 /* CritterView.swift in Sources */,
+				D93EAFDA21C89E6C00DE2DD0 /* Degree.swift in Sources */,
+				D93EAFB521C89DC700DE2DD0 /* LoginViewController.swift in Sources */,
+				D93EAFCE21C89DE700DE2DD0 /* RightEarMask.swift in Sources */,
 				D9EA6AEB21BA5FBD00C4878E /* AppDelegate.swift in Sources */,
+				D93EAFCD21C89DE700DE2DD0 /* Nose.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

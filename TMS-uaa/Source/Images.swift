@@ -14,6 +14,7 @@
 // swiftlint:disable type_body_length
 enum Asset: String {
     case backgroundImage = "BackgroundImage"
+    case white
     case closeButton = "CloseButton"
     case dots
     case face1
