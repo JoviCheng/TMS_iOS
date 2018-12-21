@@ -33,7 +33,6 @@
 		D93EAFDA21C89E6C00DE2DD0 /* Degree.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFD721C89E6B00DE2DD0 /* Degree.swift */; };
 		D93EAFDB21C89E6C00DE2DD0 /* UIColors+ColorPallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFD821C89E6B00DE2DD0 /* UIColors+ColorPallete.swift */; };
 		D93EAFDC21C89E6C00DE2DD0 /* CATransform3D+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93EAFD921C89E6C00DE2DD0 /* CATransform3D+Helper.swift */; };
-		D93FB0EF21C0BA430023782C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93FB0EE21C0BA430023782C /* Main.storyboard */; };
 		D93FB0F221C0BAA90023782C /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB0F121C0BAA90023782C /* CourseDetailViewController.swift */; };
 		D93FB0FB21C0C0480023782C /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB0F921C0C0470023782C /* Images.swift */; };
 		D93FB0FC21C0C0480023782C /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB0FA21C0C0470023782C /* StoryboardHelper.swift */; };
@@ -41,6 +40,8 @@
 		D93FB10621C0C24E0023782C /* AnimationBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB10521C0C24E0023782C /* AnimationBarButton.swift */; };
 		D93FB10821C0C25F0023782C /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB10721C0C25F0023782C /* Rotatable.swift */; };
 		D94F18E921C006AD00E355F3 /* CourseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F18E721C0063D00E355F3 /* CourseCollectionViewCell.swift */; };
+		D97C3CF721CB905800267C0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97C3CF621CB905700267C0A /* Main.storyboard */; };
+		D97C3CFA21CBB91A00267C0A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D97C3CF821CBB91A00267C0A /* Model.xcdatamodeld */; };
 		D9EA6AEB21BA5FBD00C4878E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA6AEA21BA5FBD00C4878E /* AppDelegate.swift */; };
 		D9EA6AF521BA5FC000C4878E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9EA6AF321BA5FC000C4878E /* LaunchScreen.storyboard */; };
 		D9EA6B0021BA5FC000C4878E /* TMS_uaaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA6AFF21BA5FC000C4878E /* TMS_uaaTests.swift */; };
@@ -96,7 +97,6 @@
 		D93EAFD721C89E6B00DE2DD0 /* Degree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Degree.swift; sourceTree = "<group>"; };
 		D93EAFD821C89E6B00DE2DD0 /* UIColors+ColorPallete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColors+ColorPallete.swift"; sourceTree = "<group>"; };
 		D93EAFD921C89E6C00DE2DD0 /* CATransform3D+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CATransform3D+Helper.swift"; sourceTree = "<group>"; };
-		D93FB0EE21C0BA430023782C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		D93FB0F121C0BAA90023782C /* CourseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
 		D93FB0F921C0C0470023782C /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		D93FB0FA21C0C0470023782C /* StoryboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
@@ -104,6 +104,8 @@
 		D93FB10521C0C24E0023782C /* AnimationBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationBarButton.swift; path = "../../../../../../Downloads/expanding-collection-master 2/DemoExpandingCollection/DemoExpandingCollection/Views/AnimatingBarButton/AnimationBarButton.swift"; sourceTree = "<group>"; };
 		D93FB10721C0C25F0023782C /* Rotatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rotatable.swift; path = "../../../../../../../Downloads/expanding-collection-master 2/DemoExpandingCollection/DemoExpandingCollection/Views/AnimatingBarButton/Animations/Rotatable.swift"; sourceTree = "<group>"; };
 		D94F18E721C0063D00E355F3 /* CourseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCollectionViewCell.swift; sourceTree = "<group>"; };
+		D97C3CF621CB905700267C0A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D97C3CF921CBB91A00267C0A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		D9EA6AE721BA5FBD00C4878E /* TMS-uaa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMS-uaa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9EA6AEA21BA5FBD00C4878E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9EA6AF421BA5FC000C4878E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -301,10 +303,11 @@
 				D93FB0F621C0BBFE0023782C /* Source */,
 				D91A4D7621BFFACD0086194C /* ViewControllers */,
 				D9EA6AEA21BA5FBD00C4878E /* AppDelegate.swift */,
-				D93FB0EE21C0BA430023782C /* Main.storyboard */,
 				D93EAFAE21C79E8A00DE2DD0 /* Assets.xcassets */,
+				D97C3CF621CB905700267C0A /* Main.storyboard */,
 				D9EA6AF321BA5FC000C4878E /* LaunchScreen.storyboard */,
 				D9EA6AF621BA5FC000C4878E /* Info.plist */,
+				D97C3CF821CBB91A00267C0A /* Model.xcdatamodeld */,
 			);
 			path = "TMS-uaa";
 			sourceTree = "<group>";
@@ -449,9 +452,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9EA6AF521BA5FC000C4878E /* LaunchScreen.storyboard in Resources */,
+				D97C3CF721CB905800267C0A /* Main.storyboard in Resources */,
 				D91A4D7E21BFFC7D0086194C /* CourseCollectionViewCell.xib in Resources */,
 				D93EAFAF21C79E8A00DE2DD0 /* Assets.xcassets in Resources */,
-				D93FB0EF21C0BA430023782C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +577,7 @@
 				D93FB0FE21C0C1090023782C /* ConfigurationHelper.swift in Sources */,
 				D93FB10821C0C25F0023782C /* Rotatable.swift in Sources */,
 				D93EAFCA21C89DE700DE2DD0 /* LeftEarMask.swift in Sources */,
+				D97C3CFA21CBB91A00267C0A /* Model.xcdatamodeld in Sources */,
 				D93FB10621C0C24E0023782C /* AnimationBarButton.swift in Sources */,
 				D93EAFD121C89DE700DE2DD0 /* Mouth.swift in Sources */,
 				D93EAFD621C89DE700DE2DD0 /* LeftEar.swift in Sources */,
@@ -913,6 +917,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D97C3CF821CBB91A00267C0A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D97C3CF921CBB91A00267C0A /* Model.xcdatamodel */,
+			);
+			currentVersion = D97C3CF921CBB91A00267C0A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D9EA6ADF21BA5FBD00C4878E /* Project object */;
 }
