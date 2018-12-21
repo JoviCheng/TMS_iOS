@@ -9,13 +9,14 @@
 import Foundation
 import UIKit
 import expanding_collection
+import SwiftyJSON
 
 class MainViewController: ExpandingViewController {
     
+    let imageArray:Array = ["color0","color1","color2","color3","color4","color5"]
     typealias ItemInfo = (imageName: String, title: String)
     fileprivate var cellsIsOpen = [Bool]()
-    fileprivate let items: [ItemInfo] = [("color0", "游戏策划与角色设计"), ("color1", "软件测试方法与技术"), ("color2", "交互体验与应用"), ("color3", "移动前端编程技术")]
-    
+    fileprivate var items: [ItemInfo] = []
 //    @IBOutlet var pageLabel: UILabel!
 }
 
@@ -27,6 +28,7 @@ extension MainViewController {
         itemSize = CGSize(width: 256, height: 460)
         super.viewDidLoad()
         
+        loadCourse()
         registerCell()
         fillCellIsOpenArray()
         addGesture(to: collectionView!)
@@ -35,6 +37,21 @@ extension MainViewController {
 }
 
 extension MainViewController {
+    
+    fileprivate func loadCourse() {
+        let jsonPathx = NSHomeDirectory() + "/Documents/Schedule.json"
+        let data = NSData.init(contentsOfFile: jsonPathx)
+        let courseData = JSON(data!)
+        print(courseData)
+        let currentWeek:Int! = courseData["term"]["currentWeek"].intValue
+        for course in courseData["schedules"].arrayValue {
+            if(course["startWeek"].intValue <= currentWeek && currentWeek <= course["endWeek"].intValue){
+            items.append((imageName: imageArray[Int.random(in: 0 ..< 5)], title: course["course"].stringValue))
+                
+            }
+        }
+        
+    }
     
     fileprivate func registerCell() {
         

@@ -67,7 +67,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="NrC-CF-3DW" kind="show" identifier="NoName" id="96Q-qQ-exL"/>
+                        <segue destination="NrC-CF-3DW" kind="show" identifier="NoName" id="qFJ-Fz-ePi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="la8-60-rLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -114,6 +114,7 @@
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="9sm-xQ-a5v" id="daP-fZ-egv"/>
+                        <segue destination="ccD-hc-wzD" kind="show" identifier="LoginSegue" id="Kr9-Zt-mtS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kN6-Zc-XhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -142,7 +143,7 @@
         <!--Course Detail View Controller-->
         <scene sceneID="zQm-ou-NMn">
             <objects>
-                <tableViewController storyboardIdentifier="DemoTableViewController" automaticallyAdjustsScrollViewInsets="NO" id="NrC-CF-3DW" customClass="CourseDetailViewController" customModule="TMS_uaa" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CourseDetailViewController" automaticallyAdjustsScrollViewInsets="NO" id="NrC-CF-3DW" customClass="CourseDetailViewController" customModule="TMS_uaa" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wR5-F7-ZSX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

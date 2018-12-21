@@ -99,62 +99,16 @@ final class LoginViewController: UIViewController, UITextFieldDelegate {
             print("Result: \(response.result)")                         // response serialization result
             if let value = response.result.value{
                 let json = JSON(value)
-                print(value)
-                struct schedules: Decodable {
-                    var endWeek: Int
-                    var id: String
-                    var dayOfWeek: Int
-                    var courseClassId: String
-                    var totalSection: Int
-                    var teacherName: String
-                    var taskId: String
-                    var startSection: Int
-                    var course: String
-                    var oddEven: Int
-                    var courseItem: String
-                    var place: String
-                    var teacherId: String
-                    var courseClassName: String
-                    var startWeek: Int
+                print(json)
+                let jsonPath = NSHomeDirectory() + "/Documents/Schedule.json"
+               do {
+                try json.stringValue.write(toFile: jsonPath, atomically: true,encoding: .utf8)
                 }
-                
-                struct term: Decodable {
-                    var id: Int
-                    var endWeek: Int
-                    var currentWeek: Int
-                    var startWeek: Int
+               catch{
                 }
-                
-                
-                struct Student: Decodable {
-                    var username: String
-                    var term: [term]
-                    var schedules: [schedules]
-                }
-                
-                let decoder = JSONDecoder()
-                guard let stores = try? decoder.decode([Student].self, from: value as! Data) else{
-                    fatalError("`JSON Decode Failed`")
-                }
-                print(stores)
-                
-                let filePath = NSHomeDirectory() + "/Documents/Schedule.plist"
-                print(filePath)
-//                let fukk = json["term"]["id"]
-//                let saveData = NSArray.init(objects:json["schedules"])
-                let saveData:NSArray = [json["schedules"][1]["course"].stringValue,3,4]
-//                let saveData:NSArray = json["schedules"]
-//                let fuckingData : [Optional] = [json["term"]["id"],3,4]
-//                print(saveData)
-//                let saveData : NSArray = [json["schedules"]]
-//                let saveData = NSDictionary(dictionary: json)
-//                let studentName = json["username"]
-                saveData.write(toFile: filePath, atomically: true)
-//               saveData.write(toFile: filePath, atomically: true, encoding: .utf8)
-//                print(json["schedules"])
-//                if let userName = json["username"].string {
-//                    self.classInfo.text = userName
-//                }
+//                let secondView = MainViewController()
+                //跳转
+                self.performSegue(withIdentifier: "LoginSegue", sender: self)
             }
         }
 
