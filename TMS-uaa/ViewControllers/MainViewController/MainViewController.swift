@@ -14,7 +14,7 @@ import SwiftyJSON
 class MainViewController: ExpandingViewController {
     
     let imageArray:Array = ["color0","color1","color2","color3","color4","color5"]
-    typealias ItemInfo = (imageName: String, title: String)
+    typealias ItemInfo = (imageName: String, course: String, startWeek:Int,teacher:String,endWeek:Int,dayOfWeek:Int,totalSection:Int,place:String,startSection:Int)
     fileprivate var cellsIsOpen = [Bool]()
     fileprivate var items: [ItemInfo] = []
 //    @IBOutlet var pageLabel: UILabel!
@@ -46,10 +46,48 @@ extension MainViewController {
         let currentWeek:Int! = courseData["term"]["currentWeek"].intValue
         for course in courseData["schedules"].arrayValue {
             if(course["startWeek"].intValue <= currentWeek && currentWeek <= course["endWeek"].intValue){
-            items.append((imageName: imageArray[Int.random(in: 0 ..< 5)], title: course["course"].stringValue))
-                
+            items.append((imageName: imageArray[Int.random(in: 0 ..< 5)], course: course["course"].stringValue,startWeek:course["startWeek"].intValue,teacher:course["teacherName"].stringValue,endWeek:course["endWeek"].intValue,dayOfWeek:course["dayOfWeek"].intValue,totalSection:course["totalSection"].intValue,place:course["place"].stringValue,startSection:course["startSection"].intValue))
             }
         }
+        //每天给课程排序
+        for i in 0..<items.count{
+            var bool = true
+            var m:Int = 0
+            var n:Int = 0
+            for j in 0..<items.count-1-i{
+                if(items[j].startSection > items[j+1].startSection){
+                    let temp = items[j]
+                    items[j] = items[j+1]
+                    items[j+1] = temp
+                    bool = false
+                }
+                m+=1
+            }
+            n+=1
+            if(bool){
+                break
+            }
+        }
+        //每周给课程排序
+        for i in 0..<items.count{
+            var bool = true
+            var m:Int = 0
+            var n:Int = 0
+            for j in 0..<items.count-1-i{
+                if(items[j].dayOfWeek > items[j+1].dayOfWeek){
+                    let temp = items[j]
+                    items[j] = items[j+1]
+                    items[j+1] = temp
+                    bool = false
+                }
+                m+=1
+            }
+            n+=1
+            if(bool){
+                break
+            }
+        }
+//        items = items.sorted(by:{$0.startSection > $1.startSection})
         
     }
     
@@ -137,7 +175,7 @@ extension MainViewController {
         let info = items[index]
 //        print(info)
         cell.backgroundImageView?.image = UIImage(named: info.imageName)
-        cell.courseTitle.text = info.title
+        cell.courseTitle.text = info.course
         cell.cellIsOpen(cellsIsOpen[index], animated: false)
 //        print(cellsIsOpen)
     }
