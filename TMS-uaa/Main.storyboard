@@ -57,6 +57,7 @@
                             </constraints>
                         </view>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="locationButton" id="iJz-DP-YJU" customClass="AnimatingBarButton" customModule="DemoExpandingCollection" customModuleProvider="target">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="string" keyPath="normalImageName" value="locationButton"/>
                                 <userDefinedRuntimeAttribute type="string" keyPath="selectedImageName" value="CloseButton"/>

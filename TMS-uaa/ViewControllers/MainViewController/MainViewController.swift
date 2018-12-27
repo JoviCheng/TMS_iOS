@@ -174,8 +174,13 @@ extension MainViewController {
         //        print(currentIndex)
         let info = items[index]
 //        print(info)
+        //赋值给Cell
         cell.backgroundImageView?.image = UIImage(named: info.imageName)
         cell.courseTitle.text = info.course
+        cell.teacherName.text = info.teacher
+        cell.weekText.text = String(info.dayOfWeek)
+        cell.section.text = String(info.startSection)+"-"+String(info.startSection+info.totalSection-1)+"节"
+        cell.place.text = info.place
         cell.cellIsOpen(cellsIsOpen[index], animated: false)
 //        print(cellsIsOpen)
     }
