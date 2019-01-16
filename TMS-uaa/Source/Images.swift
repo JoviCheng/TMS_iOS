@@ -1,4 +1,3 @@
-// Generated using SwiftGen, by O.Halligon — https://github.com/AliSoftware/SwiftGen
 
 #if os(iOS) || os(tvOS) || os(watchOS)
     import UIKit.UIImage

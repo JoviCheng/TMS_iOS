@@ -37,8 +37,8 @@
 		D93FB0FB21C0C0480023782C /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB0F921C0C0470023782C /* Images.swift */; };
 		D93FB0FC21C0C0480023782C /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB0FA21C0C0470023782C /* StoryboardHelper.swift */; };
 		D93FB0FE21C0C1090023782C /* ConfigurationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB0FD21C0C1090023782C /* ConfigurationHelper.swift */; };
-		D93FB10621C0C24E0023782C /* AnimationBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB10521C0C24E0023782C /* AnimationBarButton.swift */; };
-		D93FB10821C0C25F0023782C /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB10721C0C25F0023782C /* Rotatable.swift */; };
+		D94DE0DB21EF008700BCC08D /* AnimationBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DE0DA21EF008600BCC08D /* AnimationBarButton.swift */; };
+		D94DE0DD21EF00A400BCC08D /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DE0DC21EF00A300BCC08D /* Rotatable.swift */; };
 		D94F18E921C006AD00E355F3 /* CourseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F18E721C0063D00E355F3 /* CourseCollectionViewCell.swift */; };
 		D97C3CF721CB905800267C0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97C3CF621CB905700267C0A /* Main.storyboard */; };
 		D97C3CFA21CBB91A00267C0A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D97C3CF821CBB91A00267C0A /* Model.xcdatamodeld */; };
@@ -101,8 +101,8 @@
 		D93FB0F921C0C0470023782C /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		D93FB0FA21C0C0470023782C /* StoryboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
 		D93FB0FD21C0C1090023782C /* ConfigurationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationHelper.swift; sourceTree = "<group>"; };
-		D93FB10521C0C24E0023782C /* AnimationBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationBarButton.swift; path = "../../../../../../Downloads/expanding-collection-master 2/DemoExpandingCollection/DemoExpandingCollection/Views/AnimatingBarButton/AnimationBarButton.swift"; sourceTree = "<group>"; };
-		D93FB10721C0C25F0023782C /* Rotatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rotatable.swift; path = "../../../../../../../Downloads/expanding-collection-master 2/DemoExpandingCollection/DemoExpandingCollection/Views/AnimatingBarButton/Animations/Rotatable.swift"; sourceTree = "<group>"; };
+		D94DE0DA21EF008600BCC08D /* AnimationBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationBarButton.swift; sourceTree = "<group>"; };
+		D94DE0DC21EF00A300BCC08D /* Rotatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rotatable.swift; sourceTree = "<group>"; };
 		D94F18E721C0063D00E355F3 /* CourseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCollectionViewCell.swift; sourceTree = "<group>"; };
 		D97C3CF621CB905700267C0A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D97C3CF921CBB91A00267C0A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -261,7 +261,7 @@
 		D93FB10321C0C2310023782C /* AnimatingBarButton */ = {
 			isa = PBXGroup;
 			children = (
-				D93FB10521C0C24E0023782C /* AnimationBarButton.swift */,
+				D94DE0DA21EF008600BCC08D /* AnimationBarButton.swift */,
 				D93FB10421C0C23A0023782C /* Animations */,
 			);
 			path = AnimatingBarButton;
@@ -270,7 +270,7 @@
 		D93FB10421C0C23A0023782C /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				D93FB10721C0C25F0023782C /* Rotatable.swift */,
+				D94DE0DC21EF00A300BCC08D /* Rotatable.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -566,6 +566,7 @@
 				D93EAFCC21C89DE700DE2DD0 /* LeftArm.swift in Sources */,
 				D93EAFCF21C89DE700DE2DD0 /* Head.swift in Sources */,
 				D93FB0FC21C0C0480023782C /* StoryboardHelper.swift in Sources */,
+				D94DE0DD21EF00A400BCC08D /* Rotatable.swift in Sources */,
 				D93EAFCB21C89DE700DE2DD0 /* Muzzle.swift in Sources */,
 				D93EAFD221C89DE700DE2DD0 /* RightEar.swift in Sources */,
 				D93EAFD021C89DE700DE2DD0 /* RightArm.swift in Sources */,
@@ -575,10 +576,8 @@
 				D93EAFDB21C89E6C00DE2DD0 /* UIColors+ColorPallete.swift in Sources */,
 				D93EAFD321C89DE700DE2DD0 /* LeftEye.swift in Sources */,
 				D93FB0FE21C0C1090023782C /* ConfigurationHelper.swift in Sources */,
-				D93FB10821C0C25F0023782C /* Rotatable.swift in Sources */,
 				D93EAFCA21C89DE700DE2DD0 /* LeftEarMask.swift in Sources */,
 				D97C3CFA21CBB91A00267C0A /* Model.xcdatamodeld in Sources */,
-				D93FB10621C0C24E0023782C /* AnimationBarButton.swift in Sources */,
 				D93EAFD121C89DE700DE2DD0 /* Mouth.swift in Sources */,
 				D93EAFD621C89DE700DE2DD0 /* LeftEar.swift in Sources */,
 				D91A4D7A21BFFB3C0086194C /* MainViewController.swift in Sources */,
@@ -589,6 +588,7 @@
 				D93EAFB521C89DC700DE2DD0 /* LoginViewController.swift in Sources */,
 				D93EAFCE21C89DE700DE2DD0 /* RightEarMask.swift in Sources */,
 				D9EA6AEB21BA5FBD00C4878E /* AppDelegate.swift in Sources */,
+				D94DE0DB21EF008700BCC08D /* AnimationBarButton.swift in Sources */,
 				D93EAFCD21C89DE700DE2DD0 /* Nose.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

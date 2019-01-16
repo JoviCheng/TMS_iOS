@@ -21,9 +21,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAJ-Bx-cmO" userLabel="Back Container View">
                         <rect key="frame" x="0.0" y="0.0" width="256" height="335"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="back" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWN-GE-3HH">
-                                <rect key="frame" x="58" y="278" width="141" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第1-9周" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWN-GE-3HH">
+                                <rect key="frame" x="98" y="279.5" width="60.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -31,7 +30,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="256" id="89i-Oc-Ai6"/>
+                            <constraint firstItem="aWN-GE-3HH" firstAttribute="centerX" secondItem="pAJ-Bx-cmO" secondAttribute="centerX" id="Q6u-NC-JPU"/>
                             <constraint firstAttribute="height" constant="335" id="hrl-13-gkm"/>
+                            <constraint firstAttribute="bottom" secondItem="aWN-GE-3HH" secondAttribute="bottom" constant="35" id="ncm-c8-EV4"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m8g-M5-bVK" userLabel="Front Container View">
@@ -40,8 +41,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color0" translatesAutoresizingMaskIntoConstraints="NO" id="HgB-AO-8Kv">
                                 <rect key="frame" x="0.0" y="0.0" width="256" height="335"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="课程名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19h-8F-iSh">
-                                <rect key="frame" x="91.5" y="40" width="73" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="课程名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19h-8F-iSh">
+                                <rect key="frame" x="91.5" y="45" width="73" height="29"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
@@ -50,7 +51,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="教师名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvV-zr-A4W">
-                                <rect key="frame" x="102" y="84" width="52" height="21"/>
+                                <rect key="frame" x="102" y="89" width="52" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -84,7 +85,7 @@
                             <constraint firstItem="XvV-zr-A4W" firstAttribute="top" secondItem="19h-8F-iSh" secondAttribute="bottom" constant="15" id="STF-ko-RTu"/>
                             <constraint firstItem="SsW-D3-eNP" firstAttribute="centerX" secondItem="m8g-M5-bVK" secondAttribute="centerX" id="XQG-xj-GAT"/>
                             <constraint firstItem="19h-8F-iSh" firstAttribute="centerX" secondItem="m8g-M5-bVK" secondAttribute="centerX" id="gHg-IB-b61"/>
-                            <constraint firstItem="19h-8F-iSh" firstAttribute="top" secondItem="m8g-M5-bVK" secondAttribute="top" constant="40" id="jRM-iq-wM6"/>
+                            <constraint firstItem="19h-8F-iSh" firstAttribute="top" secondItem="m8g-M5-bVK" secondAttribute="top" constant="45" id="jRM-iq-wM6"/>
                             <constraint firstAttribute="bottom" secondItem="cdh-25-DUF" secondAttribute="bottom" constant="25" id="kC0-4S-eQq"/>
                             <constraint firstAttribute="trailing" secondItem="HgB-AO-8Kv" secondAttribute="trailing" id="kQw-WM-KIx"/>
                             <constraint firstItem="SsW-D3-eNP" firstAttribute="top" secondItem="cmd-NX-TcI" secondAttribute="bottom" constant="8" id="lxe-u5-iUc"/>
@@ -104,6 +105,7 @@
             </constraints>
             <size key="customSize" width="183" height="251"/>
             <connections>
+                <outlet property="SEWeek" destination="aWN-GE-3HH" id="52a-PO-VYG"/>
                 <outlet property="backConstraintY" destination="jAl-FT-Njf" id="jZu-zI-BOu"/>
                 <outlet property="backContainerView" destination="pAJ-Bx-cmO" id="MkZ-Ay-9QB"/>
                 <outlet property="backgroundImageView" destination="HgB-AO-8Kv" id="x7X-zz-gMs"/>

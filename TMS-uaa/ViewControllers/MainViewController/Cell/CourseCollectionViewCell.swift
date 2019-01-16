@@ -18,6 +18,7 @@ class CourseCollectionViewCell: BasePageCollectionCell {
     @IBOutlet var weekText: UILabel!
     @IBOutlet var section: UILabel!
     @IBOutlet var place: UILabel!
+    @IBOutlet var SEWeek: UILabel!
     
     
     override func awakeFromNib() {
@@ -42,5 +43,9 @@ class CourseCollectionViewCell: BasePageCollectionCell {
         place.layer.shadowRadius = 2
         place.layer.shadowOffset = CGSize(width: 0, height: 3)
         place.layer.shadowOpacity = 0.2
+        
+        SEWeek.layer.shadowRadius = 2
+        SEWeek.layer.shadowOffset = CGSize(width: 0, height: 3)
+        SEWeek.layer.shadowOpacity = 0.2
     }
 }

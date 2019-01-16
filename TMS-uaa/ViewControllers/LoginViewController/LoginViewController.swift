@@ -95,7 +95,7 @@ final class LoginViewController: UIViewController, UITextFieldDelegate {
         print(passwordTextField.text!)
         let parameters = ["stuNum":emailTextField.text!,"password":passwordTextField.text!]
     
-        AF.request("http://localhost:6226/ios",method: .get, parameters: parameters).responseJSON { response in
+        AF.request("http://123.207.252.169:6223/tms",method: .post, parameters: parameters).responseJSON { response in
             print("Result: \(response.result)")                         // response serialization result
             if let value = response.result.value{
                 let json = JSON(value)

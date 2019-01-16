@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "coolHue-FFE985-FA742B.png",
+      "filename" : "white.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "white-1.jpg",
       "scale" : "2x"
     },
     {

@@ -22,27 +22,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="tjB-pX-Xbq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="tjB-pX-Xbq">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎回来，Jovi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXn-4i-aeH">
+                                <rect key="frame" x="109.5" y="69" width="156" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期一" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Mt-sj-BVX">
+                                <rect key="frame" x="161.5" y="586" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="XXn-4i-aeH" firstAttribute="top" secondItem="BcG-Yd-zfI" secondAttribute="bottom" constant="5" id="FiV-K0-ncq"/>
                             <constraint firstAttribute="bottom" secondItem="tjB-pX-Xbq" secondAttribute="bottom" id="Fum-VO-FCy"/>
                             <constraint firstAttribute="trailing" secondItem="tjB-pX-Xbq" secondAttribute="trailing" id="Ulf-TG-qVx"/>
                             <constraint firstItem="tjB-pX-Xbq" firstAttribute="top" secondItem="wSy-GL-WSy" secondAttribute="top" id="ihR-fQ-t7e"/>
+                            <constraint firstItem="XXn-4i-aeH" firstAttribute="centerX" secondItem="wSy-GL-WSy" secondAttribute="centerX" id="kzk-x4-6mc"/>
+                            <constraint firstItem="7Mt-sj-BVX" firstAttribute="centerX" secondItem="wSy-GL-WSy" secondAttribute="centerX" id="nHU-Vj-2dm"/>
+                            <constraint firstItem="DNX-Ka-8pq" firstAttribute="top" secondItem="7Mt-sj-BVX" secondAttribute="bottom" constant="60" id="okE-ae-j9z"/>
                             <constraint firstItem="tjB-pX-Xbq" firstAttribute="leading" secondItem="wSy-GL-WSy" secondAttribute="leading" id="qPV-Xs-mmb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jxj-1c-SmX"/>
                     </view>
                     <navigationItem key="navigationItem" id="q55-66-GAn">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" image="searchIcon" id="IMl-cR-MOs"/>
+                        <barButtonItem key="leftBarButtonItem" id="IMl-cR-MOs"/>
                         <view key="titleView" contentMode="scaleToFill" id="tsW-vb-yEw">
                             <rect key="frame" x="67.5" y="5.5" width="240" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title" translatesAutoresizingMaskIntoConstraints="NO" id="cT7-GP-KuP">
+                                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title" translatesAutoresizingMaskIntoConstraints="NO" id="cT7-GP-KuP">
                                     <rect key="frame" x="94.5" y="8.5" width="51" height="16"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="16" id="EeV-S1-r7y"/>
@@ -56,7 +73,7 @@
                                 <constraint firstItem="cT7-GP-KuP" firstAttribute="centerY" secondItem="tsW-vb-yEw" secondAttribute="centerY" id="tl5-vU-m7M"/>
                             </constraints>
                         </view>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="locationButton" id="iJz-DP-YJU" customClass="AnimatingBarButton" customModule="DemoExpandingCollection" customModuleProvider="target">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="locationButton" id="iJz-DP-YJU" customClass="AnimatingBarButton" customModule="TMS_uaa" customModuleProvider="target">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="string" keyPath="normalImageName" value="locationButton"/>
@@ -68,6 +85,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="nameTabel" destination="XXn-4i-aeH" id="OPC-0g-7qB"/>
+                        <outlet property="weekTabel" destination="7Mt-sj-BVX" id="1fY-l4-40G"/>
                         <segue destination="NrC-CF-3DW" kind="show" identifier="NoName" id="qFJ-Fz-ePi"/>
                     </connections>
                 </viewController>
@@ -83,7 +102,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color2" translatesAutoresizingMaskIntoConstraints="NO" id="Mzp-cH-6Wf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="royal" translatesAutoresizingMaskIntoConstraints="NO" id="Mzp-cH-6Wf">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sm-xQ-a5v">
@@ -159,17 +178,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="6Z2-cV-9Da">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="schoolMap" translatesAutoresizingMaskIntoConstraints="NO" id="6Z2-cV-9Da">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stars" translatesAutoresizingMaskIntoConstraints="NO" id="fl8-6L-LeK">
-                                                    <rect key="frame" x="40" y="92" width="77" height="12"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="77" id="Nap-OQ-cR9"/>
-                                                        <constraint firstAttribute="height" constant="12" id="ZUp-hY-jt4"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La Crescenta-Montrose, CA91020 Glendale NO. 7911847" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTo-lR-vyb">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京师范大学珠海分校 NO. 7911847" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTo-lR-vyb">
                                                     <rect key="frame" x="40" y="49" width="319" height="26.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.49803921569999998" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -179,10 +191,8 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="mTo-lR-vyb" secondAttribute="trailing" id="3Ze-zp-j8f"/>
                                                 <constraint firstItem="mTo-lR-vyb" firstAttribute="leading" secondItem="Qug-no-XFJ" secondAttribute="leading" constant="40" id="BA8-le-vXQ"/>
-                                                <constraint firstAttribute="bottom" secondItem="fl8-6L-LeK" secondAttribute="bottom" constant="20" id="CZx-Nh-FXe"/>
                                                 <constraint firstAttribute="trailing" secondItem="6Z2-cV-9Da" secondAttribute="trailing" id="KEu-ej-yTK"/>
                                                 <constraint firstItem="6Z2-cV-9Da" firstAttribute="leading" secondItem="Qug-no-XFJ" secondAttribute="leading" id="RCG-x9-Y26"/>
-                                                <constraint firstItem="fl8-6L-LeK" firstAttribute="leading" secondItem="Qug-no-XFJ" secondAttribute="leading" constant="40" id="Vx1-QM-F0v"/>
                                                 <constraint firstAttribute="bottom" secondItem="6Z2-cV-9Da" secondAttribute="bottom" id="Xel-8h-SwY"/>
                                                 <constraint firstItem="mTo-lR-vyb" firstAttribute="centerY" secondItem="Qug-no-XFJ" secondAttribute="centerY" id="ZEn-dd-J4C"/>
                                                 <constraint firstItem="6Z2-cV-9Da" firstAttribute="top" secondItem="Qug-no-XFJ" secondAttribute="top" id="kdV-ZS-Yz5"/>
@@ -209,14 +219,14 @@
                                                                         <constraint firstAttribute="height" constant="40" id="e1U-jD-SJe"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Peter Allan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cf0-gZ-INU">
-                                                                    <rect key="frame" x="50" y="11" width="166" height="18"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="第一阶段" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cf0-gZ-INU">
+                                                                    <rect key="frame" x="50" y="11" width="172.5" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB 14th" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKR-F9-ci6">
-                                                                    <rect key="frame" x="226" y="14" width="43" height="12"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9月 5日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKR-F9-ci6">
+                                                                    <rect key="frame" x="232.5" y="14" width="36.5" height="12"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                     <color key="textColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -226,12 +236,11 @@
                                                                 </imageView>
                                                             </subviews>
                                                         </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="F1i-Df-MUn">
-                                                            <rect key="frame" x="0.0" y="40" width="284.5" height="60"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="理论知识的讲解，定义分析。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="F1i-Df-MUn">
+                                                            <rect key="frame" x="0.0" y="40" width="159.5" height="60"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="60" id="eUu-xq-YLF"/>
                                                             </constraints>
-                                                            <string key="text">The federal beach atc requires states that receive funding to develop a risk-based beach evaluation and classification plan and apply it to</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" red="0.4431372549" green="0.4431372549" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -271,14 +280,14 @@
                                                                         <constraint firstAttribute="height" constant="40" id="fYs-pQ-5SC"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Amada Iin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hyr-BD-whU">
-                                                                    <rect key="frame" x="50" y="11" width="166" height="18"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="第二阶段" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hyr-BD-whU">
+                                                                    <rect key="frame" x="50" y="11" width="163" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB 14th" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvs-qc-fzA">
-                                                                    <rect key="frame" x="226" y="14" width="43" height="12"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10月 12日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvs-qc-fzA">
+                                                                    <rect key="frame" x="223" y="14" width="46" height="12"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                     <color key="textColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -288,12 +297,11 @@
                                                                 </imageView>
                                                             </subviews>
                                                         </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="9O2-a6-Ag3">
-                                                            <rect key="frame" x="0.0" y="40" width="284.5" height="60"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="理论知识探索，解开课题谜底。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="9O2-a6-Ag3">
+                                                            <rect key="frame" x="0.0" y="40" width="172" height="60"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="60" id="pWg-XT-E5d"/>
                                                             </constraints>
-                                                            <string key="text">The federal beach atc requires states that receive funding to develop a risk-based beach evaluation and classification plan and apply it to</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" red="0.4431372549" green="0.4431372549" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -333,14 +341,14 @@
                                                                         <constraint firstAttribute="width" constant="40" id="k0O-iX-MAg"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Peter Allan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5p-CM-iKf">
-                                                                    <rect key="frame" x="50" y="11" width="166" height="18"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="第三阶段" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5p-CM-iKf">
+                                                                    <rect key="frame" x="50" y="11" width="169.5" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB 14th" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0P-cs-2JC">
-                                                                    <rect key="frame" x="226" y="14" width="43" height="12"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11月 3日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0P-cs-2JC">
+                                                                    <rect key="frame" x="229.5" y="14" width="39.5" height="12"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                     <color key="textColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -350,12 +358,11 @@
                                                                 </imageView>
                                                             </subviews>
                                                         </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="tT5-2x-z5b">
-                                                            <rect key="frame" x="0.0" y="40" width="284.5" height="60"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通过理论知识，编写试验计划" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="tT5-2x-z5b">
+                                                            <rect key="frame" x="0.0" y="40" width="159.5" height="60"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="60" id="fzX-lQ-2Gd"/>
                                                             </constraints>
-                                                            <string key="text">The federal beach atc requires states that receive funding to develop a risk-based beach evaluation and classification plan and apply it to</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" red="0.4431372549" green="0.4431372549" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -395,14 +402,14 @@
                                                                         <constraint firstAttribute="width" constant="40" id="fIF-Ye-cE4"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Amada Iin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NoJ-hh-2gJ">
-                                                                    <rect key="frame" x="50" y="11" width="166" height="18"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="第四阶段" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NoJ-hh-2gJ">
+                                                                    <rect key="frame" x="50" y="11" width="164.5" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB 14th" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxy-nv-KlA">
-                                                                    <rect key="frame" x="226" y="14" width="43" height="12"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11月 18日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxy-nv-KlA">
+                                                                    <rect key="frame" x="224.5" y="14" width="44.5" height="12"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                     <color key="textColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -412,12 +419,11 @@
                                                                 </imageView>
                                                             </subviews>
                                                         </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="rFg-NW-5eT">
-                                                            <rect key="frame" x="0.0" y="40" width="284.5" height="60"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始尝试实验，通过分析实验结果，验证理论。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="rFg-NW-5eT">
+                                                            <rect key="frame" x="0.0" y="40" width="257.5" height="60"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="60" id="9MO-Bs-DcV"/>
                                                             </constraints>
-                                                            <string key="text">The federal beach atc requires states that receive funding to develop a risk-based beach evaluation and classification plan and apply it to</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" red="0.4431372549" green="0.4431372549" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -441,7 +447,7 @@
                                         <rect key="frame" x="0.0" y="644" width="375" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vgc-f3-4eO" id="NF3-xb-AAb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="129.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="2Od-re-euh">
@@ -457,14 +463,14 @@
                                                                         <constraint firstAttribute="height" constant="40" id="tBV-69-b0v"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Peter Allan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qT4-Rv-s0t">
-                                                                    <rect key="frame" x="50" y="0.0" width="166" height="18"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="第五阶段" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qT4-Rv-s0t">
+                                                                    <rect key="frame" x="50" y="0.0" width="168" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB 14th" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9R4-cN-6uk">
-                                                                    <rect key="frame" x="226" y="3" width="43" height="12"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12月 3日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9R4-cN-6uk">
+                                                                    <rect key="frame" x="228" y="3" width="41" height="12"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                     <color key="textColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -474,12 +480,11 @@
                                                                 </imageView>
                                                             </subviews>
                                                         </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="IlH-il-RrX">
-                                                            <rect key="frame" x="0.0" y="18" width="284.5" height="60"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完成实验报告，背诵理论知识。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="IlH-il-RrX">
+                                                            <rect key="frame" x="0.0" y="18" width="172" height="60"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="60" id="fas-PC-06d"/>
                                                             </constraints>
-                                                            <string key="text">The federal beach atc requires states that receive funding to develop a risk-based beach evaluation and classification plan and apply it to</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" red="0.4431372549" green="0.4431372549" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -503,7 +508,7 @@
                                         <rect key="frame" x="0.0" y="774" width="375" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IVL-yH-ZkZ" id="l6T-8D-3Ka">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="129.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="YY2-eC-JK9">
@@ -519,14 +524,14 @@
                                                                         <constraint firstAttribute="width" constant="40" id="stm-X6-7q1"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Amada Iin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="se8-gu-X2x">
-                                                                    <rect key="frame" x="50" y="0.0" width="166" height="18"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="第六阶段" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="se8-gu-X2x">
+                                                                    <rect key="frame" x="50" y="0.0" width="163.5" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB 14th" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1Q-20-IDQ">
-                                                                    <rect key="frame" x="226" y="3" width="43" height="12"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12月 13日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1Q-20-IDQ">
+                                                                    <rect key="frame" x="223.5" y="3" width="45.5" height="12"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                     <color key="textColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -536,12 +541,11 @@
                                                                 </imageView>
                                                             </subviews>
                                                         </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="eA9-xb-trL">
-                                                            <rect key="frame" x="0.0" y="18" width="284.5" height="60"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完成课程感想，记录课程所学。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="eA9-xb-trL">
+                                                            <rect key="frame" x="0.0" y="18" width="172" height="60"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="60" id="Os8-bo-qfk"/>
                                                             </constraints>
-                                                            <string key="text">The federal beach atc requires states that receive funding to develop a risk-based beach evaluation and classification plan and apply it to</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" red="0.4431372549" green="0.4431372549" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -572,12 +576,12 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="7co-Vx-vf4">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" image="searchIcon" id="7h5-69-7tt"/>
+                        <barButtonItem key="leftBarButtonItem" id="7h5-69-7tt"/>
                         <view key="titleView" contentMode="scaleToFill" id="TZg-Zh-au1" userLabel="Item View">
                             <rect key="frame" x="67.5" y="5.5" width="240" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title" translatesAutoresizingMaskIntoConstraints="NO" id="9vR-ON-1ZQ">
+                                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title" translatesAutoresizingMaskIntoConstraints="NO" id="9vR-ON-1ZQ">
                                     <rect key="frame" x="94.5" y="8.5" width="51" height="16"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="51" id="dMf-VY-GZm"/>
@@ -605,16 +609,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BackgroundImage" width="500" height="500"/>
         <image name="CloseButton" width="20" height="20"/>
         <image name="Title" width="51" height="16"/>
-        <image name="color2" width="500" height="500"/>
+        <image name="back" width="1230" height="1362"/>
         <image name="face1" width="16" height="16"/>
         <image name="face2" width="16" height="16"/>
         <image name="heand" width="16" height="16"/>
         <image name="locationButton" width="20" height="20"/>
-        <image name="map" width="16" height="16"/>
-        <image name="searchIcon" width="20" height="20"/>
-        <image name="stars" width="16" height="16"/>
+        <image name="royal" width="633" height="696"/>
+        <image name="schoolMap" width="940" height="426"/>
     </resources>
 </document>
